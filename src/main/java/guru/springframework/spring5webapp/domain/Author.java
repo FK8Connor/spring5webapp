@@ -24,14 +24,17 @@ public class Author {
     public Author() {
     }
 
-    public Author(String firstName, String lastName, Set<Book> books) {
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
 
     }
 
-    public Author(String eric, String evans) {
-    }
+   public Author(String firstName, String lastName, Set<Book> books) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.books = books;
+   }
 
     public Long getId() {
         return id;
